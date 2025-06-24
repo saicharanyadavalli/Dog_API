@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Dog Breed Gallery</h1>
+        <div id="controls">
+            <form id="search-form">
+                <input type="text" id="search-input" placeholder="Enter a dog breed..." list="breeds-list">
+                <datalist id="breeds-list"></datalist>
+                <button type="submit">Search</button>
+            </form>
+            <button id="refresh-btn"><span class="btn-text">Load New Dogs</span><span class="spinner" style="display:none;"></span></button>
+        </div>
+        <div id="gallery"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
